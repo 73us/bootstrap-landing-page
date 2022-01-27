@@ -1,0 +1,27 @@
+@media screen and (min-width: 1024px) {
+  .header {
+    min-height: 768px;
+    background-image: url(../images/header_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-box-shadow: inset 0 0 0 30em rgba(198, 108, 73, 0.4);
+            box-shadow: inset 0 0 0 30em rgba(198, 108, 73, 0.4);
+  }
+  .about {
+    height: 544px;
+    background-color: darkgoldenrod;
+  }
+  .skills {
+    height: 693px;
+    background-color: aquamarine;
+  }
+  .portfolio {
+    height: 822px;
+    background-color: darksalmon;
+  }
+  .footer {
+    height: 528px;
+    background-color: lightgreen;
+  }
+}
+/*# sourceMappingURL=desktop.css.map */

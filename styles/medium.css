@@ -1,0 +1,373 @@
+@media (min-width: 991px) and (max-width: 1199px) {
+  .d-flex-clmn, .header__title-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .sect-title, .about__title, .skills__title, .portfolio__title, .footer__title {
+    font-family: Libre Franklin;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    color: #333333;
+  }
+  .header {
+    min-height: 450px;
+    background-image: url(../images/header_bg.png);
+    background-repeat: no-repeat;
+    -webkit-box-shadow: inset 0 0 0 20em rgba(198, 108, 73, 0.4);
+            box-shadow: inset 0 0 0 20em rgba(198, 108, 73, 0.4);
+  }
+  .header .navbar {
+    padding-top: 5.3rem;
+  }
+  .header .navbar-toggler {
+    display: none;
+  }
+  .header .navbar-brand {
+    margin-left: 9.3%;
+    font-family: Libre Franklin;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    color: #ffffff;
+  }
+  .header .navbar-brand:hover {
+    color: #ffffff;
+  }
+  .header .navbar-nav {
+    margin-left: -15%;
+  }
+  .header .navbar-nav .nav-item {
+    width: 100px;
+    margin-right: 8.8%;
+  }
+  .header .navbar-nav .nav-item .nav-link {
+    font-family: Libre Franklin;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: #ffffff;
+    text-align: center;
+  }
+  .header .navbar-nav .nav-item .nav-link:hover {
+    font-weight: bold;
+  }
+  .header__title-box {
+    margin: 6.7% 0 0 10.9%;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  .header__title-box__title {
+    font-family: Libre Franklin;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 64px;
+    line-height: 78px;
+    color: #ffffff;
+  }
+  .header__title-box__text {
+    font-family: Libre Franklin;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    color: #ffffff;
+  }
+  .header__title-box__link {
+    margin-top: 1em !important;
+    font-family: Libre Franklin;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: #ffffff;
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+  }
+  .header__title-box__link:hover {
+    color: #ffffff;
+    font-weight: bold;
+  }
+  .about {
+    margin: 1% auto 0;
+    padding-bottom: 11%;
+  }
+  .about .row {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  .about__title {
+    margin: 7% 0 1.5% 0.5%;
+  }
+  .about__text {
+    padding-top: 5.2%;
+    margin-left: 0.5%;
+    margin-bottom: -2.4%;
+    font-family: Libre Franklin;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    color: #333333;
+    text-align: justify;
+  }
+  .skills {
+    background-color: #fffaf2;
+    padding-top: 7%;
+  }
+  .skills__box {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 6%;
+    padding-bottom: 9%;
+  }
+  .skills .row.row-size {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  .skills__title {
+    margin-left: 0.7%;
+  }
+  .skills__my-photo {
+    padding-left: 4.7%;
+  }
+  .skills__my-photo__img {
+    width: 350px;
+    height: 340px;
+  }
+  .skills__my-skills {
+    padding-left: 11.5%;
+  }
+  .skills__my-skills__main_sub-title {
+    margin-top: -9%;
+    font-family: Libre Franklin;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    color: #333333;
+  }
+  .skills__my-skills__main_desc {
+    margin: -9% 0 9% 27%;
+    font-family: Libre Franklin;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    color: #333333;
+  }
+  .skills__my-skills .skills__diagram-box {
+    padding-top: 9%;
+    padding-left: 0.3%;
+  }
+  .skills__my-skills__sub-title {
+    margin-right: -5.9%;
+    margin-bottom: 3%;
+    font-family: Libre Franklin;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    color: #333333;
+  }
+  .skills__my-skills__desc {
+    font-family: Libre Franklin;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    color: #333333;
+  }
+  .skills__my-skills .progress {
+    border-radius: 0;
+    width: 300px;
+    height: 24px;
+    background-color: #f5d6ab;
+  }
+  .skills__my-skills .progress-bar {
+    background-color: #c66c49;
+  }
+  .portfolio {
+    margin-bottom: 10.5%;
+  }
+  .portfolio .row.row-size {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  .portfolio__title {
+    text-align: start;
+    margin-left: 0.9%;
+    margin-top: 7.7%;
+  }
+  .portfolio .carousel-inner {
+    width: 900px;
+    margin: 0 auto;
+    padding-top: 6.2%;
+    padding-left: 1.6%;
+  }
+  .portfolio .carousel .row {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .portfolio__text-box {
+    width: 300px;
+  }
+  .portfolio__text-box__sub-title {
+    font-family: Libre Franklin;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    color: #333333;
+  }
+  .portfolio__text-box__text {
+    padding-top: 14%;
+    margin-left: 0.2%;
+    margin-bottom: -2.4%;
+    font-family: Libre Franklin;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    color: #333333;
+    text-align: justify;
+  }
+  .portfolio__img-box {
+    width: 550px;
+    height: 403px;
+    margin-top: 5.9%;
+    padding-left: 12px;
+    padding-right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .portfolio__img-box__image-1 {
+    width: 300px;
+    height: 144px;
+  }
+  .portfolio__img-box__image-2 {
+    width: 300px;
+    height: 233px;
+  }
+  .portfolio__img-box__image-3 {
+    width: 200px;
+    height: 233px;
+  }
+  .portfolio__img-box__image-4 {
+    width: 200px;
+    height: 144px;
+  }
+  .portfolio .carousel-control-prev {
+    width: unset;
+    top: unset;
+    bottom: -0.8%;
+    left: 1.5%;
+  }
+  .portfolio .carousel-control-prev .carousel-control-prev-icon {
+    background-image: url(../images/left.svg);
+    background-size: unset;
+  }
+  .portfolio .carousel-control-next {
+    width: unset;
+    top: unset;
+    left: 5.2%;
+    bottom: -0.7%;
+  }
+  .portfolio .carousel-control-next .carousel-control-next-icon {
+    background-image: url(../images/right.svg);
+    background-size: unset;
+  }
+  .footer {
+    min-height: 400px;
+    background-color: #fffaf2;
+  }
+  .footer__title {
+    text-align: start;
+    margin-left: 1%;
+    padding-top: 0.8%;
+  }
+  .footer .row.row-size {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  .footer .row.row-size.lg_plus {
+    max-width: 900px;
+    padding: 3% 0 0;
+  }
+  .footer__column-1 {
+    height: 160px;
+    margin-right: 5.7%;
+  }
+  .footer__column-1__link, .footer__column-2__link, .footer__column-3__link {
+    font-family: Libre Franklin;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: #333333;
+    text-decoration: none;
+  }
+  .footer__column-2 {
+    height: 132px;
+  }
+  .footer__column-3 {
+    width: 200px;
+    margin-left: 5.6%;
+    height: 50px;
+  }
+  .footer__column-3__phone-nmb {
+    font-family: Libre Franklin;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    color: #333333;
+    text-decoration: none;
+  }
+  .footer .footer__column-1__link:hover, .footer .footer__column-2__link:hover, .footer .footer__column-3__link:hover,
+  .footer .footer__column-2__link:hover,
+  .footer .footer__column-3__link:hover,
+  .footer .footer__column-3__phone-nmb:hover {
+    font-weight: bold;
+    color: #333333;
+  }
+  .footer .to_top {
+    display: block;
+    background-image: url(../images/to_top.svg);
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 0;
+    right: -87.5%;
+  }
+}
+/*# sourceMappingURL=medium.css.map */

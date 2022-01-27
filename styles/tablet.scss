@@ -1,0 +1,428 @@
+@import "./base/mixins";
+@import "./base/variables";
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .d-flex-clmn {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .sect-title {
+    @include font-style($main-font-family, normal, bold, 24px, 29px, $black);
+  }
+  body {
+    min-width: 768px;
+    // HEADER
+    .header {
+      min-height: 300px;
+      background-image: url(../images/header_bg_small.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      box-shadow: inset 0 0 0 10em rgba(198, 108, 73, 0.4);
+      // menu
+      .navbar {
+        padding-top: 2.2em;
+
+        // .container-fluid {
+        //   align-items: center; //подумаю чи нада
+        // }
+        &-toggler {
+          position: absolute;
+          top: 41.1px;
+          left: 10px;
+          font-size: 0;
+          line-height: 1;
+          background-color: transparent;
+          border: none;
+        }
+        &-toggler:focus {
+          box-shadow: none;
+        }
+        &-icon {
+          background-image: url(../images/toggler_icon.svg);
+          background-size: cover;
+          background-position: center;
+          width: 30px;
+          height: 20px;
+          fill: $white;
+        }
+        &-brand {
+          margin-right: 0.3rem;
+          @include font-style(
+            $main-font-family,
+            normal,
+            bold,
+            24px,
+            29px,
+            $white
+          );
+          text-align: center;
+        }
+        &-brand:hover {
+          color: $white;
+        }
+        &-brand.container-fluid {
+          align-items: center;
+        }
+        &-nav {
+          position: absolute;
+          width: 25%;
+          .nav-item {
+            .nav-link {
+              padding-left: 20%;
+              color: $black;
+              background-color: $white;
+            }
+            .nav-link:hover {
+              font-weight: bold;
+            }
+          }
+        }
+        // menu
+      }
+      // title
+      &__title-box {
+        margin: 5% auto 0;
+        @extend .d-flex-clmn;
+        &__title {
+          @include font-style(
+            $main-font-family,
+            normal,
+            normal,
+            20px,
+            24px,
+            $white
+          );
+        }
+        &__text {
+          @include font-style(
+            $main-font-family,
+            normal,
+            normal,
+            13px,
+            16px,
+            $white
+          );
+        }
+        &__link {
+          @include font-style(
+            $main-font-family,
+            normal,
+            normal,
+            13px,
+            16px,
+            $white
+          );
+          text-decoration-line: underline;
+        }
+        &__link:hover {
+          color: $white;
+          font-weight: bold;
+        }
+      }
+      // title
+    }
+    // HEADER
+// MAIN
+    // about
+    .about {
+      margin: 1% auto 0;
+      padding-bottom: 11%;
+      .row {
+        max-width: 700px;
+        margin: 0 auto;
+      }
+      &__title {
+        text-align: center;
+        margin: 6.7% 0 1.5%;
+        @extend .sect-title;
+      }
+      &__text {
+        padding-top: 3.7%;
+        margin-left: 0.5%;
+        margin-bottom: 0.6%;
+        @include font-style(
+          $main-font-family,
+          normal,
+          normal,
+          12px,
+          15px,
+          $black
+        );
+        text-align: justify;
+      }
+    }
+    // about
+
+    // skills
+    .skills {
+      background-color: #fffaf2;
+      padding-top: 2%;
+      &__box {
+        margin: 0 auto;
+        justify-content: center;
+        padding-top: 6%;
+        padding-bottom: 9%;
+      }
+      .row.row-size {
+        margin: 0 auto;
+      }
+      &__title {
+        text-align: center;
+        @extend .sect-title;
+        margin-left: 0;
+      }
+      &__my-photo {
+        padding-top: 1%;
+        padding-bottom: 7.7%;
+        padding-left: 16.8%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 0;
+        &__img {
+          width: 224px;
+          height: 218px;
+        }
+      }
+      &__my-skills {
+        &__main_sub-title {
+          margin-top: -10%;
+          @include font-style(
+            $main-font-family,
+            normal,
+            600,
+            12px,
+            25px,
+            $black
+          );
+        }
+        &__main_desc {
+          margin: -10% 0 10% 31%;
+          @include font-style(
+            $main-font-family,
+            normal,
+            normal,
+            12px,
+            25px,
+            $black
+          );
+        }
+        .skills__diagram-box {
+          padding-top: 9.7%;
+          padding-left: 0;
+        }
+        &__sub-title {
+          margin-bottom: 4.2%;
+          margin-right: -2.8%;
+          @include font-style(
+            $main-font-family,
+            normal,
+            600,
+            12px,
+            25px,
+            $black
+          );
+        }
+        &__desc {
+          @include font-style(
+            $main-font-family,
+            normal,
+            normal,
+            12px,
+            25px,
+            $black
+          );
+        }
+        .progress {
+          margin-top: 3%;
+          border-radius: 0;
+          width: 211px;
+          height: 18px;
+          background-color: #f5d6ab;
+          &-bar {
+            background-color: #c66c49;
+          }
+        }
+      }
+    }
+    // skills
+
+    // portfolio
+    .portfolio {
+      height: 404px;
+      .row.row-size {
+        max-width: 700px;
+        margin: 0 auto;
+      }
+        &__title {
+          text-align: center;
+          margin-left: -0.2%;
+          margin-top: 0;
+          @extend .sect-title;
+        }
+        .carousel {
+          &-inner {
+            width: 700px;
+            margin: 0 auto;
+            padding-top: 6.2%;
+            padding-left: 1.6%;
+          }
+          .row {
+            justify-content: space-between;
+          }
+        }
+        &__text-box {
+          width: 350px;
+          &__sub-title {
+            @include font-style(
+              $main-font-family,
+              normal,
+              500,
+              14px,
+              25px,
+              $black
+            );
+            text-align: start;
+          }
+          &__text {
+            padding-top: 4.7%;
+            margin-left: 0.2%;
+            margin-bottom: -2.4%;
+            @include font-style(
+              $main-font-family,
+              normal,
+              normal,
+              12px,
+              15px,
+              $black
+            );
+            text-align: justify;
+          }
+        }
+        &__img-box {
+          width: 339px;
+          height: 195.47px;
+          margin-top: 9.1%;
+          padding-left: 12px;
+          padding-right: 0;
+          display: flex;
+          flex-flow: column wrap;
+          justify-content: space-between;
+          align-items: center;
+          &__image-1 {
+            width: 169.76px;
+            height: 69.85px;
+          }
+          &__image-2 {
+            width: 169.28px;
+            height: 113.01px;
+          }
+          &__image-3 {
+            width: 123.69px;
+            height: 113.01px;
+          }
+          &__image-4 {
+            width: 123.69px;
+            height: 69.85px;
+          }
+        }
+        .carousel-control-prev {
+          width: unset;
+          top: unset;
+          bottom: -0.8%;
+          left: 1.5%;
+          .carousel-control-prev-icon {
+            background-image: url(../images/left.svg);
+            background-size: unset;
+          }
+        }
+        .carousel-control-next {
+          width: unset;
+          top: unset;
+          left: 5.2%;
+          bottom: -0.7%;
+          .carousel-control-next-icon {
+            background-image: url(../images/right.svg);
+            background-size: unset;
+          }
+        }
+      }
+      // portfolio
+    // MAIN
+
+    // FOOTER
+    .footer {
+      background-color: #fffaf2;
+      &__title {
+        @extend .sect-title;
+        text-align: center;
+        margin-left: -3%;
+        padding-top: 1%;
+      }
+      .row.row-size {
+        padding: 5.7% 0 0 8%;
+      }
+      &__column-1 {
+        height: 158px;
+        margin-right: -4%;
+        &__link {
+          @include font-style(
+            $main-font-family,
+            normal,
+            normal,
+            14px,
+            17px,
+            $black
+          );
+          text-decoration: none;
+        }
+      }
+      &__column-2 {
+        height: 123px;
+
+        &__link {
+          @extend .footer__column-1__link;
+        }
+      }
+      &__column-3 {
+        height: 40px;
+        &__link {
+          @extend .footer__column-1__link;
+          margin-bottom: 2%;
+        }
+        &__phone-nmb {
+          @include font-style(
+            $main-font-family,
+            normal,
+            normal,
+            12px,
+            15px,
+            $black
+          );
+          text-decoration: none;
+        }
+      }
+      .footer__column-1__link:hover,
+      .footer__column-2__link:hover,
+      .footer__column-3__link:hover,
+      .footer__column-3__phone-nmb:hover {
+        font-weight: bold;
+        color: $black;
+      }
+      .to_top {
+        display: block;
+        background-image: url(../images/to_top.svg);
+        width: 24px;
+        height: 24px;
+        background-repeat: no-repeat;
+        position: relative;
+        top: -27px;
+        right: -86.9%;
+      }
+    }
+    // FOOTER
+  }
+}
